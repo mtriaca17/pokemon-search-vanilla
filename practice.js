@@ -7,7 +7,7 @@ const searchInput = document.querySelector('#searchInput');
 
 searchForm.addEventListener('submit', e => {
   e.preventDefault();
-  const searchQuery = searchInput.value
+  const searchQuery = searchInput.value.toLowerCase();
   fetchPokemon(searchQuery)
 })
 
