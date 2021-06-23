@@ -98,7 +98,7 @@ function createTypeDiv(type) {
 //helper functions
 
 function getSprites(obj) {
-  spriteUrlArr = [];
+  let spriteUrlArr = [];
 
   spriteUrlArr.push(obj.front_default);
   spriteUrlArr.push(obj.front_shiny);
@@ -107,7 +107,7 @@ function getSprites(obj) {
 }
 
 function getTypes(arr) {
-  outputTypes = [];
+  let outputTypes = [];
 
   arr.forEach(item => {
     outputTypes.push(item.type.name);
